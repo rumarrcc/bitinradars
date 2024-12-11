@@ -1,0 +1,339 @@
+       /* Reset básico */
+       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #F8F8F8;
+        color: #333;
+    }
+    
+    /* Header */
+    header {
+        background: linear-gradient(90deg,  #ca92ff,dodgerblue);    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .logo img {
+        height: 60px; 
+        width: auto;
+    }
+    /* Navegación */
+    nav {
+        flex-grow: 1;
+        text-align: right;
+        padding-right: 100px; 
+    
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin-right: 10px;
+        padding: 0;
+        display: inline-flex;
+    }
+    
+    nav ul li {
+        margin-left: 1px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.88em;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+    
+    nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    /* Estilos varios */
+    nav ul .cabecera {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        margin-bottom: 20px; 
+    }li a:active {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+
+    .cabecera{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        margin-bottom: 20px; 
+    }
+    .cabecera h1{
+        font-size: 2.5em;
+        text-align: left;
+    }
+    .paginasecc {
+        padding: 40px;
+        max-width: 1175px;
+        margin: 0 auto; 
+        background-color: #F8F8F8;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .paginasecc h1 {
+        color:rgba(65, 65, 65, 0.973);
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .menuizquierdo {
+        background-color: #d3d3f7;
+        padding: 20px; width: 200px; 
+        font-family: Arial, sans-serif; 
+        } 
+    .titulo { 
+        font-weight: bold; 
+        margin-bottom: 10px; } 
+    .seccionfiltro { 
+        margin-bottom: 15px; 
+    }
+     .seccionfiltro label { 
+        display: block; margin-bottom: 5px; 
+    }
+    .seccionfiltro input[type="checkbox"]{ 
+        margin-right: 5px;
+    } 
+    .seccionfiltro input[type="range"] {
+         width: 100%; 
+        }
+    .botones {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .botones button {
+        padding: 10px 20px;
+        background-color: #8A2BE2;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin: 0 5px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+    
+    .botones button:hover {
+        background-color: #3600CC;
+    }
+    .layout {
+    display: flex;
+    gap: 20px; /* Espaciado entre menuizquierdo y posicionamiento */
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+
+    /* Menu izquierdo */
+    .menuizquierdo {
+        width: 250px; /* Ajusta el ancho según sea necesario */
+        background-color: #d3d3f7;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: fit-content;
+    }
+    
+    
+    .contenedores {
+        display: grid; /* Usar grid layout */
+        grid-template-columns: repeat(5, 1fr); /* Definir 5 columnas fijas */
+        gap: 20px; /* Espaciado entre los productos */
+        padding: 20px;
+        background-color: #f5f5f5; /* Fondo del contenedor */
+        width: 100%;
+        height: 100%;/* Ocupar todo el ancho */
+        box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
+    }
+
+     .pcard {
+        background-color: #e6e9ff; /* Fondo azul claro */
+            border: 1px solid #ccc; /* Borde gris claro */
+            border-radius: 8px; /* Esquinas redondeadas */
+            text-align: center; /* Centrar contenido */
+            padding: 15px; /* Espaciado interno */
+            transition: transform 0.3s, box-shadow 0.3s; /* Animación al pasar el ratón */
+            width: 100%; /* Aseguramos que cada tarjeta ocupe todo el ancho disponible */
+            box-sizing: border-box; /* Ajustamos para que el padding no aumente el tamaño total */
+     }
+    
+    .pcard img {
+        max-width: 100%; /* Imagen responsive */
+        height: auto;
+        border-radius: 4px; /* Esquinas ligeramente redondeadas */
+    }
+    
+    .pcard p {
+        margin: 10px 0;
+        color: #333; /* Texto gris oscuro */
+        font-size: 14px;
+    }
+    .pcard strong {
+        font-size: 16px;
+        color: #000; /* Texto negro */
+    }
+    /* Efecto hover */
+    .pcard:hover {
+        transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    }
+    
+    /* Numero de paginas */
+    .numpags {
+        margin: 30px 0;
+        text-align: right;
+    
+    }
+    
+    .numpags a {
+        color: white;
+        padding: 8px 12px;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        margin: 0 0px;
+        background-color:dodgerblue;
+    
+    }
+    
+    .numpags a.active {
+        background-color: #4A00FF;
+        color: white;
+        border: 1px solid #4A00FF;
+    }
+    
+    .numpags a:hover {
+        color: white;
+        background-color: #4A00FF;
+    }
+    .flechas{
+        padding: 80px 25px;
+    
+    }
+                /* Footer */
+    footer {
+        background-color: #f7f7f7; /* Color sólido para el fondo */
+        color: #333; /* Texto gris oscuro */
+        padding: 20px;
+        text-align: center;
+        background: none !important;
+        border: none !important; 
+        }
+
+        .footer-container {
+            display: flex; 
+            justify-content: space-between;
+            background-color: #f7f7f7; 
+            padding: 20px 50px; 
+            background: none !important; 
+            border: none !important;    
+            /* Se eliminan bordes y estilos innecesarios */
+        }
+
+        .footer-column h3 {
+            font-weight: bold; 
+            margin-bottom: 10px;
+            color: #000; /* Negro para los títulos */
+        }
+
+        .footer-column ul {
+            list-style-type: none; 
+            padding: 0; 
+        }
+
+        .footer-column li {
+            margin-bottom: 10px; 
+        }
+
+        .footer-column a {
+            text-decoration: none; 
+            color: #333; /* Gris oscuro para los enlaces */
+        }
+
+        .footer-column a:hover { 
+            text-decoration: underline; 
+            color: #000; /* Negro al pasar el ratón */
+        }
+    
+    
+    /* Tablet */
+    @media (max-width: 1024px) {
+        nav {
+            padding-right: 20px;
+        }
+    
+        nav ul {
+            margin-right: 20px;
+        }
+    
+        nav ul li {
+            margin-left: 10px;
+        }
+    
+        .contenedores {
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas para pantallas medianas */
+        }
+        .cabecera h1 {
+            font-size: 2em;
+        }
+    
+        .botones button {
+            padding: 8px 15px;
+            font-size: 0.9em;
+        }
+    }
+    
+    /* Movil */
+    @media (max-width: 600px) {
+        header {
+            flex-direction:column;
+            align-items: flex-start;
+        }
+    
+        nav {
+            text-align: left;
+            padding: 10px 0;
+        }
+    
+        nav ul {
+            flex-direction: column;
+            margin-right: 0;
+        }
+    
+        nav ul li {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+    
+        .contenedores {
+        grid-template-columns: 1fr; /* 1 columna para pantallas pequeñas */
+         }
+
+    
+        .cabecera h1 {
+            font-size: 1.5em;
+        }
+    
+        .botones {
+            flex-direction: column-reverse;
+        }
+    
+        .botones button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    }
